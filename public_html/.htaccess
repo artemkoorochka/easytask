@@ -1,0 +1,11 @@
+Options -Indexes
+ErrorDocument 404 /404.php
+
+<IfModule mod_php7.c>
+  php_flag session.use_trans_sid off
+  #php_value extension session.so
+  #php_value session.save_path "/tmp"
+  #php_flag default_charset UTF-8
+  php_value display_errors 1
+</IfModule>
+
